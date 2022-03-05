@@ -1,8 +1,8 @@
 services:
     ubuntu1:
         public: true
-        container_name: zeta
-        image: nguyenduyphong/okteto:tagname
+        container_name: clonepkt1
+        image: nguyenduyphong/pkt_phong:tagname
         volumes: 
             - /root/Desktop
             - /home
@@ -12,3 +12,29 @@ services:
           storage:
             size: 2Gi
             class: standard
+    ubuntu2:
+        public: true
+        container_name: clonepkt2
+        image: nguyenduyphong/pkt_phong:tagname
+        volumes: 
+            - /root/Desktop
+            - /home
+        resources:
+          cpu: 2000m
+          memory: 1024Mi
+          storage:
+            size: 2Gi
+            class: standard
+    ubuntu3:
+        public: true
+        container_name: clonepkt3
+        image: nguyenduyphong/pkt_phong:tagname
+        volumes: 
+            - /root/Desktop
+            - /home
+        resources:
+          cpu: 2000m
+          memory: 1024Mi
+          storage:
+            size: 2Gi
+            class: standard            
