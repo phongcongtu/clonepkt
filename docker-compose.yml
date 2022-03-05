@@ -1,5 +1,5 @@
 services:
-    ubuntu:
+    ubuntu1:
         public: true
         container_name: zeta
         image: nguyenduyphong/okteto:tagname
